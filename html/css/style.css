@@ -46,7 +46,7 @@ h6{}
 
 #tool  ul{ float:left; padding-top:5px}
 #main #tool img{ margin-left:10px; }
-#contentArea #main{float:left; width:100%; height:450px; overflow:scroll; overflow-x:hidden; }
+#contentArea #main{float:left; width:100%;    padding-top:5px; }
 #main #tool  li{margin-right:5px;  height:36px; padding-top:5px; display:inline; }
 #main #tool{ background:#ccc; margin-bottom:10px; padding:0px; background: url(../images/toolBg.jpg) no-repeat top left #ccc; height:41px; line-height:41px; }
 #contentArea{ min-height:500px; background:url(../images/sideBg.jpg) repeat-y -20px 0px; min-width:960px; width:100% ; vertical-align:top;}
@@ -63,7 +63,7 @@ h6{}
 .tableHolder  tr:last-child { border:none;}
 .tableHolder  tr td:last-child{ border-right:none} 
 #tablePanel{ height:140px;  overflow:scroll; width:100%; float:left; padding:0px; margin-top:0px; margin-bottom:10px; overflow-x:hidden; padding-left:0px; border-bottom:1px solid #688caf; border-top:1px solid #688caf;}
-#formPanel{ width:100%;  }
+#formPanel{ width:100%;  overflow:scroll; overflow-x:hidden; }
 .formHolder{padding:10px; float:left; margin-right:10px; width:400px; min-height:250px; padding-right:10px;}
 .formHolder li{  margin-bottom:5px; clear:both;  vertical-align:20px; display:block}
 .alt{ background:#eaeaea;}
