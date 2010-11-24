@@ -38,7 +38,7 @@ h6{}
 	
 }
 
-#header{ background:#4682b4; border-bottom: solid 1px #0472bc; padding:10px; }
+#header{ background:#4682b4; float:left; width:100%;}
 #header .logo{ float:left;}
 #header .identity{ float:right; text-align:right; line-height:24px;}
 #contentArea{background:#09F; height:100%; clear:both; }
@@ -46,7 +46,7 @@ h6{}
 
 #tool  ul{ float:left; padding-top:5px}
 #main #tool img{ margin-left:10px; }
-#contentArea #main{float:left; width:100%; height:500px; overflow:scroll; overflow-x:hidden; }
+#contentArea #main{float:left; width:100%; height:450px; overflow:scroll; overflow-x:hidden; }
 #main #tool  li{margin-right:5px;  height:36px; padding-top:5px; display:inline; }
 #main #tool{ background:#ccc; margin-bottom:10px; padding:0px; background: url(../images/toolBg.jpg) no-repeat top left #ccc; height:41px; line-height:41px; }
 #contentArea{ min-height:500px; background:url(../images/sideBg.jpg) repeat-y -20px 0px; min-width:960px; width:100% ; vertical-align:top;}
@@ -63,20 +63,26 @@ h6{}
 .tableHolder  tr:last-child { border:none;}
 .tableHolder  tr td:last-child{ border-right:none} 
 #tablePanel{ height:140px;  overflow:scroll; width:100%; float:left; padding:0px; margin-top:0px; margin-bottom:10px; overflow-x:hidden; padding-left:0px; border-bottom:1px solid #688caf; border-top:1px solid #688caf;}
-#formPanel{ width:100%; }
-.formHolder{padding:10px; float:left; margin-right:20px; width:500px; min-height:250px;}
-.formHolder li{ display:block; margin-bottom:5px; clear:both; float:left; vertical-align:20px}
+#formPanel{ width:100%;  }
+.formHolder{padding:10px; float:left; margin-right:10px; width:400px; min-height:250px; padding-right:10px;}
+.formHolder li{  margin-bottom:5px; clear:both;  vertical-align:20px; display:block}
 .alt{ background:#eaeaea;}
 
-#formPanel .formHolder input[type="text" ]
+#formPanel .formHolder input[type="text"]
 {
-		border:1px #688caf solid; padding:5px; width:300px;
+		border:1px #688caf solid; padding:5px; width:200px;
 		border-radius:5px 5px;
 		-moz-border-radius:5px 5px;
-		height:30px; line-height:25px;
+		height:20px; line-height:20px;
 		font-size:14px;
 		float:left;	
 		text-indent:5px;
+		display:inline;
+		margin-bottom:5px;
+}
+#formPanel .formHolder .rad
+{
+border:none; float:left; width:25px;
 }
 #formPanel .formHolder select
 {
@@ -85,6 +91,8 @@ h6{}
 		-moz-border-radius:5px 5px;
 		height:30px; line-height:15px;
 		font-size:14px;float:left;
+		margin-bottom:5px;
+		
 }
 #formPanel .formHolder img 
 {
@@ -99,35 +107,34 @@ h6{}
 		background:url(../images/BtnUp.jpg) repeat-x #FFF bottom; color:#000;
 		border:1px #688caf solid; padding:5px;
 		font-size:14px;
-		cursor:pointer;float:right;
+		cursor:pointer;float:left;
 	}
 #formPanel	.formHolder input[type="radio" ]
 {
 	vertical-align:20px; height:20px; float:left;
-	}
-	#formPanel	.formHolder  .lbl
-		{
-			float:left; height:30px; margin-right:10px; line-height:30px; margin-right:5px;
-		}
+}
+#formPanel	.formHolder  .lbl
+{
+	float:left; height:30px; margin-right:10px; line-height:30px; margin-right:5px;
+}
 #formPanel .formHolder input[type="button" ]:active
 	{
 		background:url(../images/BtnOver.jpg) repeat-x #FFF bottom; color:#000;
 	}
-#formPanel		.formHolder  label
-		{
-			width:150px;
-			margin-right:20px; display:block; float:left; text-align:right;
+#formPanel .formHolder  label
+{
+			
+			margin-right:20px; float:left; text-align:right;
 			text-shadow: #FFF 0px 1px  0px;
 			line-height:30px; height:30px;
 			color:#274d72; font-weight:bold; font-size:12px;
-			font-family:Arial, Helvetica, sans-serif;
-		}
+			width:100px; display:inline;
+}
 #footer
 {
 	text-align:center;
 	vertical-align:top;
-	width:95%;
-	padding:20px;
+	padding:10px;
 }
 .menuItem .submenu
 { 
@@ -165,6 +172,7 @@ h6{}
 	line-height:34px;
 	text-shadow:#FFF  0px 1px 0px;
 	cursor:pointer;
+	
 }
 .menuItem h3 img
 {
@@ -191,21 +199,21 @@ h6{}
 }
 #tab  li
 {
-float:left;
-padding:10px; border:1px solid  #274d72;
-padding-top:5px; padding-bottom:5px;
-
-margin-right:5px;
-margin-top:5px;
-position:relative;
-background:#CCC;
-position:relative;
-height:29px;
-line-height:29px;
-font-size:14px;
-font-weight:bold;
-text-shadow:#fff 0px 1px 0px;
-cursor:pointer;
+	float:left;
+	padding:10px; border:1px solid  #274d72;
+	padding-top:5px; padding-bottom:5px;
+	
+	margin-right:5px;
+	margin-top:5px;
+	position:relative;
+	background:#CCC;
+	position:relative;
+	height:29px;
+	line-height:29px;
+	font-size:14px;
+	font-weight:bold;
+	text-shadow:#fff 0px 1px 0px;
+	cursor:pointer;
 	background:url(../images/actTAb.jpg) repeat-x top ;
 }
 #tab  .current
