@@ -6,8 +6,8 @@
 	src: url("../fonts/helReg.TTF");
 }
 @font-face {
-	font-family: helReg;
-	font-weight: bold;
+	font-family: helBold;
+	
 	src: url("../fonts/helBold.TTF");
 }
 
@@ -19,9 +19,9 @@ html ,  body {
 a{ color:#055f9b;}
 a:hover{text-decoration:underline}
 p{}
-h1{}
-h2{ color:#1390e8; font-size:24px; font-weight:bold; margin-bottom:5px;}
-h3{}
+h1{ font-weight:normal;}
+h2{ color:#1390e8; font-size:24px; font-weight:bold; margin-bottom:5px; font-family: helBold, "Helvetica Neue" , Arial, Helvetica, sans-serif; }
+h3{ font-weight:normal;}
 h4{}
 h5{}
 h6{}
@@ -46,17 +46,17 @@ h6{}
 
 #tool  ul{ float:left; padding-top:5px}
 #main #tool img{ margin-left:10px; }
-#contentArea #main{float:left; width:100%;    padding-top:5px; }
+#contentArea #main{float:left; width:100%;    padding-top:5px;  }
 #main #tool  li{margin-right:5px;  height:36px; padding-top:5px; display:inline; }
 #main #tool{ background:#ccc; margin-bottom:10px; padding:0px; background: url(../images/toolBg.jpg) no-repeat top left #ccc; height:41px; line-height:41px; }
 #contentArea{ min-height:500px; background:url(../images/sideBg.jpg) repeat-y -20px 0px; min-width:960px; width:100% ; vertical-align:top;}
 #contentArea  #panel{ background:#ccc; float:left; width:100%; border-radius:5px 5px;
-		-moz-border-radius:5px 5px;}
+		-moz-border-radius:5px 5px; border:1px solid #ccc; }
 
 
 .tableHolder{border:1px solid #688caf; background:#FFF; color:#444; margin-bottom:0px; margin-left:0px; border-top:none; border-bottom:none;  }
 
-.tableHolder th{background:url(../images/BtnUp.jpg) repeat-x; padding:5px; border-bottom:1px solid #688caf; font-weight:400; font-size:12px; color:#27413e; border-right:1px solid #688caf; font-weight:bold; font-size:14px;}
+.tableHolder th{background:url(../images/BtnUp.jpg) repeat-x; padding:5px; border-bottom:1px solid #688caf; font-weight:400; font-size:12px; color:#27413e; border-right:1px solid #688caf; font-family: helBold, "Helvetica Neue" , Arial, Helvetica, sans-serif; font-size:14px;}
 .tableHolder  td{  vertical-align:top; border-bottom:1px solid #d0d7e5; padding:3px; border-right:1px solid #d0d7e5; }
 
 .tableHolder  tr td:first-child{ background:#e4ecf7; color:#27413e; text-align:center;border-right:1px solid #688caf; border-top:1px solid #688caf; }
@@ -115,20 +115,20 @@ border:none; float:left; width:25px;
 }
 #formPanel	.formHolder  .lbl
 {
-	float:left; height:30px; margin-right:10px; line-height:30px; margin-right:5px;
+width:80px;  text-align:left; float:left;
 }
 #formPanel .formHolder input[type="button" ]:active
 	{
 		background:url(../images/BtnOver.jpg) repeat-x #FFF bottom; color:#000;
 	}
-#formPanel .formHolder  label
+#formPanel .formHolder  label, #formPanel .formHolder  lbl
 {
 			
-			margin-right:20px; float:left; text-align:right;
+			margin-right:10px; float:left; text-align:right;
 			text-shadow: #FFF 0px 1px  0px;
 			line-height:30px; height:30px;
-			color:#274d72; font-weight:bold; font-size:12px;
-			width:100px; display:inline;
+			color:#274d72;  font-size:12px; font-family: helBold, "Helvetica Neue" , Arial, Helvetica, sans-serif; 
+			width:120px; display:inline;
 }
 #footer
 {
@@ -142,7 +142,7 @@ border:none; float:left; width:25px;
 	width:210px;
 	margin:0px;
 	margin-top:-3px;
-	color:#4f4f4f;
+	color:#4f4f4f;			
 	line-height:24px;
 	font-size:12px;
 	padding-bottom:5px;
@@ -164,7 +164,7 @@ border:none; float:left; width:25px;
 {
 	background:url(../images/nav.jpg) no-repeat top left;
 	display:block;
-	font-weight:bold;
+	font-family: helBold, "Helvetica Neue" , Arial, Helvetica, sans-serif; 
 	color:#122f4b;
 	font-size:14px;
 	margin:0px;
@@ -202,7 +202,7 @@ border:none; float:left; width:25px;
 	float:left;
 	padding:10px; border:1px solid  #274d72;
 	padding-top:5px; padding-bottom:5px;
-	
+	border-bottom:none;
 	margin-right:5px;
 	margin-top:5px;
 	position:relative;
@@ -211,14 +211,22 @@ border:none; float:left; width:25px;
 	height:29px;
 	line-height:29px;
 	font-size:14px;
-	font-weight:bold;
+	font-family: helBold, "Helvetica Neue" , Arial, Helvetica, sans-serif; 
 	text-shadow:#fff 0px 1px 0px;
 	cursor:pointer;
 	background:url(../images/actTAb.jpg) repeat-x top ;
 }
-#tab  .current
+#tab  li:hover
+{
+	background:url(../images/actTAbover.jpg) top repeat-x;
+}
+
+
+#tab  .current,  #tab  .current:hover
 {
 	border-bottom:none;
 	height:30px;
 	background:#CCC;
+font-weight:bold;
+
 }
